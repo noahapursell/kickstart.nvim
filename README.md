@@ -43,7 +43,10 @@ to ~/.bashrc. change the path to the theme u wwant. themes are in the oh-my-posh
 
 source ~/.bashrc
 
-
+## Nerdfonts:
+https://www.nerdfonts.com/font-downloads
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CodeNewRoman.zip
+https://ohmyposh.dev/docs/installation/fonts
 
 
 # kickstart.nvim

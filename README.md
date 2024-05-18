@@ -1,23 +1,40 @@
 # My Notes
 sudo apt update
+
 sudo apt install neovim
+
 git clone https://github.com/noahapursell/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
+
 sudo apt update
+
 sudo apt install make gcc ripgrep unzip git xclip neovim
+
 sudo apt install nodejs
+
 sudo apt install npm
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+
 source ~/.bashrc
+
 nvm install node
+
 nvm use node
+
 git clone https://github.com/neovim/nvim-lspconfig ~/.config/nvim/pack/nvim/start/nvim-lspconfig
+
 sudo npm i -g pyright
+
 curl -s https://ohmyposh.dev/install.sh | bash -s
+
 https://github.com/JanDeDobbeleer/oh-my-posh.git
 
 
+
 ===== Add the following:
+
 eval "$(oh-my-posh init bash --config '/root/oh-my-posh/themes/wholespace.omp.json')"
 
 to ~/.bashrc. change the path to the theme u wwant. themes are in the oh-my-posh repo that was cloned. 

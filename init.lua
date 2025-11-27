@@ -208,6 +208,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- jj to <esc>
 vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Exit insert mode with jj' })
 
+-- nt to open neotree
+vim.keymap.set('n', '<leader>fe', ':Neotree toggle<CR>', { desc = 'Control Neotree with <leader>fe' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 

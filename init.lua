@@ -211,6 +211,14 @@ vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Exit insert mode with jj' })
 -- nt to open neotree
 vim.keymap.set('n', '<leader>fe', ':Neotree toggle<CR>', { desc = 'Control Neotree with <leader>fe' })
 
+-- <leade>f for format
+vim.keymap.set('n', '<leader>f', function()
+  vim.lsp.buf.format()
+end, { desc = 'Format document with <leader>f' })
+
+-- <leader>rn for rename
+vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename symbole with <leader> rn' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -649,6 +657,8 @@ require('lazy').setup({
         virtual_text = {
           source = 'if_many',
           spacing = 2,
+          wrap = true,
+          max_width = 40,
           format = function(diagnostic)
             local diagnostic_message = {
               [vim.diagnostic.severity.ERROR] = diagnostic.message,

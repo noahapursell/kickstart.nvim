@@ -236,9 +236,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { 'c', 'cpp', 'h', 'hpp' },
   callback = function()
+    require('guess-indent').set_from_buffer = function() end -- disable guessing
+    vim.bo.indentexpr = '' -- disable treesitter or legacy indent scripts
     vim.bo.cindent = false
     vim.bo.smartindent = false
-    vim.bo.indentexpr = '' -- disable treesitter or legacy indent scripts
+    vim.o.tabstop = 4
+    vim.o.shiftwidth = 4
+    vim.o.softtabstop = -1
+    vim.o.expandtab = false
   end,
 })
 

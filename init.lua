@@ -83,6 +83,10 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
+--
+-- set nvim python environment
+
+vim.g.python3_host_prog = vim.fn.expand '~/.config/nvim/virtual_environments/nvim-python/bin/python3'
 
 -- Set <space> as the leader key
 -- See `:help mapleader`

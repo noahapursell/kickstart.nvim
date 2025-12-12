@@ -744,6 +744,12 @@ require('lazy').setup({
             },
           },
         },
+        omnisharp = {
+          cmd = { 'omnisharp' },
+          enable_editorconfig_support = true,
+          enable_ms_build_load_projects_on_demand = true,
+          enable_roslyn_analyzers = true,
+        },
       }
 
       -- Ensure the servers and tools above are installed
@@ -762,6 +768,8 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'csharpier',
+        'netcoredbg',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

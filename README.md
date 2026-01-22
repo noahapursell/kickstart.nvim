@@ -14,10 +14,14 @@ A starting point for Neovim that is:
 
 ### Install Neovim
 
-Kickstart.nvim targets *only* the latest
+[Install Instrunction](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+
+Make sure to use the unstable version so you can have a newer verion.
+
+~~Kickstart.nvim targets *only* the latest
 ['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest
 ['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
-If you are experiencing issues, please make sure you have the latest versions.
+If you are experiencing issues, please make sure you have the latest versions.~~
 
 ### Install External Dependencies
 

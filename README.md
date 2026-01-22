@@ -1,4 +1,19 @@
+
+
+
 # kickstart.nvim
+
+## TLDR
+
+Run this:
+
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip git xclip neovim
+
+git clone https://github.com/noahapursell/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
 
 ## Introduction
 

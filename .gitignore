@@ -1,4 +1,4 @@
-tags
+jtags
 test.sh
 .luarc.json
 nvim
@@ -6,3 +6,4 @@ nvim
 spell/
 
 **/virtual_environments/
+./lazy-lock.json
